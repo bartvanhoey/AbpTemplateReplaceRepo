@@ -4,11 +4,11 @@ using TemplateReplace.Domain.Emailing;
 
 namespace TemplateReplace.Application.Emailing
 {
-    public class EmailinAppService : TemplateReplaceAppService, IEmailinAppService
+    public class EmailingAppService : TemplateReplaceAppService, IEmailingAppService
     {
         private readonly EmailService _emailService;
 
-        public EmailinAppService(EmailService emailService)
+        public EmailingAppService(EmailService emailService)
         {
             _emailService = emailService;
 

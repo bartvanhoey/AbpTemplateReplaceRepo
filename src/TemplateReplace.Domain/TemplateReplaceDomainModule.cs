@@ -37,8 +37,8 @@ namespace TemplateReplace
             // var settingManager = context.ServiceProvider.GetService<SettingManager>();
             // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.Host, "smtp.gmail.com");
             // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.Port, "587");
-            // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.UserName, "your-gmail-email-address-here" );
-            // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.Password, "your-password-here" );
+            // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.UserName, "bartvanhoey@gmail.com" );
+            // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.Password, "" );
             // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.EnableSsl, "true");
             // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.UseDefaultCredentials, "false");
         }

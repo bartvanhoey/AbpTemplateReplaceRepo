@@ -6,7 +6,7 @@ namespace TemplateReplace.Blazor.Pages
 {
     public partial class Index
     {
-        [Inject] protected IEmailinAppService EmailinAppService { get; set; }
+        [Inject] protected IEmailingAppService EmailinAppService { get; set; }
 
         private async Task SendEmailAsync()
         {
