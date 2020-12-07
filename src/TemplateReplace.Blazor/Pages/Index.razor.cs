@@ -8,9 +8,24 @@ namespace TemplateReplace.Blazor.Pages
     {
         [Inject] protected IEmailingAppService EmailinAppService { get; set; }
 
-        private async Task SendEmailAsync()
+        private async Task SendDefaultEmailAsync()
         {
-            await EmailinAppService.SendEmail();
+            await EmailinAppService.SendDefaultEmail();
+        }
+
+        private async Task SendHelloGermanyEmailAsync()
+        {
+            await EmailinAppService.SendHelloGermanyEmail();
+        }
+
+        private async Task SendHelloWorldEmailAsync()
+        {
+            await EmailinAppService.SendHelloWorldEmail();
+        }
+
+        private async Task SendWelcomeEmailAsync()
+        {
+            await EmailinAppService.SendWelcomeEmail();
         }
     }
 }

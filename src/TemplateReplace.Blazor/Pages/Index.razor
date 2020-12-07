@@ -1,11 +1,26 @@
 ﻿@page "/"
-  <Row Class="mb-4">
-        <Column Class="text-left">
-            <h1>Click</h1>
-        </Column>
-        <Column Class="text-right pt-2">
-       
-                <Button Color="Color.Danger" Clicked="SendEmailAsync" Class="ml-1">Send Email</Button>
-            
-        </Column>
-    </Row>
+<Row Class="mb-4">
+    <Column ColumnSize="ColumnSize.Is4">
+        <Button Color="Color.Danger" Clicked="SendDefaultEmailAsync" Class="ml-1">Send Default Email</Button>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is4">
+        <Button Color="Color.Danger" Clicked="SendHelloWorldEmailAsync" Class="ml-1">Send HelloWorld</Button>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is4">
+        <Button Color="Color.Danger" Clicked="SendHelloGermanyEmailAsync" Class="ml-1">Send HelloGermany (with data object)</Button>
+    </Column>
+</Row>
+
+<hr>
+
+<Row Class="mb-4">
+    <Column ColumnSize="ColumnSize.Is4">
+        <Button Color="Color.Danger" Clicked="SendWelcomeEmailAsync" Class="ml-1">Send Welcome Email</Button>
+    </Column>
+    <Column ColumnSize="ColumnSize.Is4">
+      
+    </Column>
+    <Column ColumnSize="ColumnSize.Is4">
+      
+    </Column>
+</Row>

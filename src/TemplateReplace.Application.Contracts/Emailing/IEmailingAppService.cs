@@ -5,6 +5,9 @@ namespace TemplateReplace.Application.Contracts.Emailing
 {
     public interface IEmailingAppService  : IApplicationService
     {
-         Task SendEmail();
+         Task SendDefaultEmail();
+         Task SendHelloWorldEmail();
+         Task SendHelloGermanyEmail();
+         Task SendWelcomeEmail();
     }
 }
