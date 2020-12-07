@@ -32,6 +32,7 @@ namespace TemplateReplace
     )]
     public class TemplateReplaceDomainModule : AbpModule
     {
+        public override void OnApplicationInitialization(ApplicationInitializationContext context)
         {
             // var settingManager = context.ServiceProvider.GetService<SettingManager>();
             // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.Host, "smtp.gmail.com");
