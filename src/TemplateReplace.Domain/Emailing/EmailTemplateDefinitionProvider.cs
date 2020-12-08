@@ -12,17 +12,13 @@ namespace TemplateReplace.Domain.Emailing
       var emailLayoutTemplate = context.GetOrNull(StandardEmailTemplates.Message);
       emailLayoutTemplate.WithVirtualFilePath("/Emailing/Templates/EmailTemplate.tpl", isInlineLocalized: true);
 
-      // context.Add(
-      //        new TemplateDefinition("WelcomeEmail", defaultCultureName: "en")
-      //        .WithVirtualFilePath("/Emailing/WelcomeEmail/Templates", isInlineLocalized: false));
+      // TODO: Why does it not find the specific template for a given culture     
+      // When you click on the WelcomeEmail button the application throws exception below
+      // Volo.Abp.AbpException: Could not find a file/folder at the location: /Emailing/WelcomeEmail/Templates
 
-      //TODO application throws Exception because doesn't find the template for the specific language
-
-      context.Add(new TemplateDefinition("EmailLayout", isLayout: true)
-        .WithVirtualFilePath("/Emailing/EmailLayout/EmailLayout.tpl", isInlineLocalized: true ));
-
-      context.Add(new TemplateDefinition(name: "WelcomeEmail", defaultCultureName: "en", layout: "EmailLayout" )
-        .WithVirtualFilePath("/Emailing/WelcomeEmail/Templates", isInlineLocalized: false));
+      context.Add(
+              new TemplateDefinition("WelcomeEmail", defaultCultureName: "en")
+              .WithVirtualFilePath("/Emailing/WelcomeEmail/Templates", isInlineLocalized: false));
 
       context.Add(
         new TemplateDefinition("HelloWorld")

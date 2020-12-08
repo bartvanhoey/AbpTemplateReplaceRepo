@@ -25,15 +25,11 @@
   </ItemGroup>
 
 
-  <!-- <ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Emailing\Templates\EmailTemplate.tpl" />
     <EmbeddedResource Include="Emailing\Templates\HelloWorldTemplate.tpl" />
     <EmbeddedResource Include="Emailing\Templates\HelloGermanyTemplate.tpl" />
-  </ItemGroup> -->
-
-
-  <ItemGroup>
-    <EmbeddedResource Include="Emailing\**\*.tpl" />
+    <EmbeddedResource Include="Emailing\WelcomeEmail\Templates\*.tpl" />
   </ItemGroup>
 
 </Project>
