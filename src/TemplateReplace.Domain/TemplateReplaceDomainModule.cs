@@ -45,6 +45,7 @@ namespace TemplateReplace
             // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.EnableSsl, "true");
             // settingManager.SetGlobalAsync(EmailSettingNames.Smtp.UseDefaultCredentials, "false");
         }
+        
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
             Configure<AbpMultiTenancyOptions>(options =>

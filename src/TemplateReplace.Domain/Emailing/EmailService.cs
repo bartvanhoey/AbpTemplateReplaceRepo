@@ -18,6 +18,15 @@ namespace TemplateReplace.Domain.Emailing
       _emailSender = emailSender;
     }
 
+    public async Task SendEmailToVerifyEmailAddressAfterRegistration()
+    {
+         await _emailSender.SendAsync(
+          "bartvanhoey@hotmail.com",     // target email address
+          "Email subject",         // subject
+          "This is email body..."  // email body
+      );
+    }
+
     public async Task SendAsync(string targetEmail)
     {
       var emailBody = await _templateRenderer

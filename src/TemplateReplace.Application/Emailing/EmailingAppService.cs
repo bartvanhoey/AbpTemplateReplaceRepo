@@ -13,6 +13,10 @@ namespace TemplateReplace.Application.Emailing
       _emailService = emailService;
     }
 
+    public async Task SendEmailAsync()
+    {
+      await _emailService.SendEmailToVerifyEmailAddressAfterRegistration();
+    }
 
     public async Task SendDefaultEmail()
     {
